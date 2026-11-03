@@ -19,8 +19,13 @@
 
 .about-me {
     font-family: "Shippori Mincho", serif;
-    font-size: 22px; 
-    line-height: 0.5;
+    font-size: 22px;
+    /* line-height: 0.5; */
+}
+
+span {
+    font-family: "Shippori Mincho", serif;
+    font-size: 22px;
 }
 
 #spotify-link {
@@ -32,4 +37,43 @@
     border-radius: 32px;
     height: 48px;
     width: 194px;
+}
+
+@media (max-width: 500px) {
+    #hero {
+        height: 320px;
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+
+    #occupation {
+        font-size: 12px;
+    }
+
+    .about-me {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    #spotify-link {
+        margin: 16px 0 0 0;
+        height: 40px;
+        width: 148px;
+        font-size: 12px;
+    }
+
+    #spotify-link-box {
+        display: flex;
+        justify-content: end;
+    }
+
+    #location {
+        display: none;
+    }
+
+    #hero-div {
+        gap: 8px;
+    }
 }

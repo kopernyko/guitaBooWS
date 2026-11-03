@@ -5,6 +5,10 @@
     font-family: "Schibsted Grotesk", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --text-color: #cfcfcf;
     --href-color: #e6e6e6;
@@ -21,6 +25,7 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -43,4 +48,10 @@ h1 {
 p {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 24px;
+    }
 }

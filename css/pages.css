@@ -22,5 +22,16 @@
     display: flex;
     align-items: center;
     font-family: "IBM Plex Mono", monospace;
+}
 
+@media (max-width: 500px) {
+    #page-list {
+        width: 320px;
+        gap: 8px;
+        margin: 0;
+    }
+
+    #pages__header {
+        margin: 64px 0 16px 0;
+    }
 }
